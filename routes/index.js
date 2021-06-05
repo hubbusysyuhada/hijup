@@ -14,10 +14,17 @@ router.post('/product', MainController.addProduct)
 router.put('/product/:id', MainController.editProduct)
 router.delete('/product/:id', MainController.deleteProduct)
 
-// order router
+// order routes
 router.get('/order', MainController.getAllOrders)
-router.post('/order', MainController.newBulkOrder)
+router.post('/order', MainController.createOrder)
+// routes untuk menghapus/mengurangi 1 barang defined by product id
+router.delete('/order/:id', MainController.minusOne)
+// routes untuk menghapus semua barang defined by id
+router.delete('/order/clear/:id', MainController.toZeroQuantity)
+// routes untuk menghapus semua order item
+router.delete('/order', MainController.emptyOrderList)
 
+// BIKIN API DOC DI README
 
 router.use(errorHandler)
 
