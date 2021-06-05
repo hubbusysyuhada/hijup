@@ -2,7 +2,7 @@
 - A Javascript based server to manage hijup e-commerce
 - By Muhammad Hafidz Hubbusysyuhada as Assessment Project for Hijup
 - Git repository : https://github.com/hubbusysyuhada/hijup
-- Heroku deployment :
+- Heroku server : https://hijup.herokuapp.com
   
 # Features :
  - CRUD for products
