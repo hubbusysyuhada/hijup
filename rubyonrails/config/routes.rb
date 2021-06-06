@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  root 'hijup#home'
+
+  get 'products' => 'pages#products'
+
+  get 'order' => 'pages#order'
+  
+  resources :hijup
+
 end

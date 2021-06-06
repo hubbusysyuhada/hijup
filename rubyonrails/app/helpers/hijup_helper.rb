@@ -1,0 +1,2 @@
+module HijupHelper
+end
